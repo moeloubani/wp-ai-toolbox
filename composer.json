@@ -1,0 +1,28 @@
+{
+    "name": "moe/ai-page-summary",
+    "description": "A tool that gives your pages a quick summary.",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Moe Loubani",
+            "email": "moe@loubani.com"
+        }
+    ],
+    "require": {
+        "openai-php/client": "^0.3.0"
+    },
+    "autoload": {
+        "files": [
+            "inc/trait-singleton.php",
+            "inc/class-setup.php",
+            "inc/class-settings.php",
+            "inc/class-shortcode.php",
+            "inc/class-openai.php",
+            "inc/api/class-endpoints.php",
+            "inc/api/class-create-post.php",
+            "inc/api/class-summarize.php",
+            "inc/api/class-generate-image.php"
+        ]
+    }
+}

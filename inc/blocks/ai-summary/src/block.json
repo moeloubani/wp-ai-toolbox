@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "moe/ai-page-summary",
+  "version": "0.1.0",
+  "title": "AI Page Summary",
+  "category": "text",
+  "icon": "smiley",
+  "description": "Creates a summary based on your existing post content.",
+  "supports": {
+	"html": false
+  },
+  "textdomain": "ai-page-summary",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+	"summary": {
+	  "type": "string",
+	  "source": "html",
+	  "selector": "p"
+	},
+	"audience": {
+	  "type": "string"
+	}
+  }
+}
