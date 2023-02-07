@@ -2,3 +2,4 @@ node_modules/
 composer.lock
 .editorconfig
 package-lock.json
+.DS_Store
