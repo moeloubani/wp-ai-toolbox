@@ -18,7 +18,7 @@ class Summarize {
         $content = $request->get_param('content');
         $length = $request->get_param('length');
 
-        $summary = $this->get_summary($audience, $content, $length);
+        $summary = wp_kses_post($this->get_summary($audience, $content, $length));
 
         if($summary instanceof \WP_Error) {
             return new \WP_REST_Response($summary, 500);

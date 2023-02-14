@@ -3,6 +3,9 @@
  * Plugin Name: WP AI Toolbox
  * Description: Use the OpenAI API to generate content, summarize text, and create images.
  * Author: Moe Loubani
+ * Author URI: https://moe.ca
+ * Version: 1.0.1
+ * Text Domain: wp-ai-toolbox
  */
 
 //Some constants
